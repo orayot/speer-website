@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Molengo');
+
+html {
+	font-family: 'Molengo', sans-serif;
+	/* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('./fonts/Product Sans Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('./fonts/Product Sans Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', sans-serif;
+}
+
+.gradient-background {
+    background: #2a52d2; /* Old Browsers */
+    background: -webkit-radial-gradient(top left,#2a52d2,#4bc6d0); /*Safari 5.1-6*/
+    background: -o-radial-gradient(top left,#2a52d2,#4bc6d0); /*Opera 11.1-12*/
+    background: -moz-radial-gradient(top left,#2a52d2,#4bc6d0); /*Fx 3.6-15*/
+    background: radial-gradient(top left, #2a52d2, #4bc6d0); /*Standard*/
+}
+
+/* font-color helpers */
+.light-blue {color: #2A99D2}
+.black {color:#494949}
+.gray {color:#929292}
+.lighter-gray {color:#979797}
+.lightest-gray {color:#E6E6E6}
+
+/* bg color helpers */
+.bg-light-blue {background-color: #2A99D2}
+.bg-lighter-gray {background-color:#979797}
+.bg-lightest-gray {background-color: #F4F4F4}
+
+/* border-color helpers */
+.b--black {border-color:#494949}
+.b--gray {border-color:#929292}
+.b--lighter-gray {border-color:#979797}
+.b--lightest-gray {border-color:#E6E6E6}
+
+/* anchor settings */
+a {font-family: inherit; text-decoration: none; color: inherit;}
+a:hover {color: inherit;}
