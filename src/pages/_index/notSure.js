@@ -1,7 +1,7 @@
 import React from 'react'
 
 import manThinking from 'assets/images/illustrations/man-thinking.svg'
-import Button from 'components/ui/Button'
+import Button from 'components/ui/button'
 
 const CaseStudy = ({title, body}) => (<div className='cf mt3 pointer dim'>
   <div className='w-10 fl'>

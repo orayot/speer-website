@@ -1,14 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-
 const links = [{
   label: 'Blog'
 }, {
   label: 'Terms'
 }, {
   label: 'Privacy Policy'
-}];
+}]
 
 const Footer = () => (<div className='cf bg-lightest-gray pv4'>
   <div className='fl-ns w-40 pointer pl3 pl4-ns'>
