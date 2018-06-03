@@ -16,7 +16,8 @@ const links = [
 const Footer = () => (
   <div className="cf bg-lightest-gray pv4">
     <div className="w-100 fl-ns w-40-ns pointer pl3 pl4-ns">
-      <span className="b mr4">Speer by Palisade</span> <span className='dn dib-ns'>founders@speer.app</span>
+      <span className="b mr4">Speer by Palisade</span>{' '}
+      <span className="dn dib-ns">founders@speer.app</span>
     </div>
     <div className="w-100 fl-ns w-60-ns tl tr-ns pl3 pl0-ns pr0 pr4-ns mt2 mt0-ns f6 f5-ns">
       {links.map(l => (

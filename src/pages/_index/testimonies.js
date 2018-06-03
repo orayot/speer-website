@@ -1,10 +1,13 @@
 import React from 'react'
 
 import SubHeader from 'components/subHeader'
-import isMobile from 'utils/isMobile'
+import injectIsMobile from 'components/injectIsMobile'
 
-const Testimony = ({title, body, name, designation, avatar, marginTop}) => (
-  <div className="w-100 fl-ns w-25-ns pa4" style={isMobile ? {} : {marginTop}}>
+const Testimony = ({ title, body, name, designation, avatar, marginTop, isMobile }) => (
+  <div
+    className="w-100 fl-ns w-25-ns pa4"
+    style={isMobile ? {} : { marginTop }}
+  >
     <div className="pa3 ba b--lightest-gray br2">
       <div className="f4 mb3">{title}</div>
       <div className="lighter-gray">{body}</div>
@@ -63,13 +66,13 @@ const testimonies = [
   },
 ]
 
-const Testimonies = () => (
-  <div className='mt4 mt0-ns'>
-    <SubHeader title='Testimonies' />
-    <div className='cf pv4'>
-      {testimonies.map((t, i) => <Testimony key={i} {...t} />)}
+const Testimonies = ({isMobile}) => (
+  <div className="mt4 mt0-ns">
+    <SubHeader title="Testimonies" />
+    <div className="cf pv4">
+      {testimonies.map((t, i) => <Testimony key={i} isMobile={isMobile} {...t}/>)}
     </div>
   </div>
 )
 
-export default Testimonies
+export default injectIsMobile(Testimonies)

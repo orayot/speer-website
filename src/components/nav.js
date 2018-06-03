@@ -3,23 +3,23 @@ import Link from 'gatsby-link'
 
 import logIn from 'assets/icons/log-in.svg'
 import zap from 'assets/icons/zap.svg'
-import isMobile from 'utils/isMobile'
+import injectIsMobile from 'components/injectIsMobile'
 
 const links = [
   {
     label: 'Pricing',
     href: '',
-    showOnMobile: true
+    showOnMobile: true,
   },
   {
     label: 'Blog',
     href: '',
-    showOnMobile: true
+    showOnMobile: true,
   },
   {
     label: 'Academy',
     href: '',
-    showOnMobile: true
+    showOnMobile: true,
   },
   {
     label: 'Login',
@@ -35,15 +35,18 @@ const links = [
   },
 ]
 
-const Nav = () => (
+const Nav = ({isMobile}) => (
   <div className="">
-    <div className="gradient-background white" style={{height: isMobile ? 80 : 68}}>
+    <div
+      className="gradient-background white"
+      style={{ height: isMobile ? 80 : 68 }}
+    >
       <div className="cf">
         <div className="w-100 w-40-ns tc tl-ns fl-ns white pointer pl0 pl4-ns b mt2 mt3-ns f4">
           Speer
         </div>
         <div className="w-100 w-60-ns fl-ns tc tr-ns pr3 pr4-ns mt2 mt3-ns pl3 pl0-ns">
-          {links.filter(l => isMobile ? l.showOnMobile : true).map(l => (
+          {links.filter(l => (isMobile ? l.showOnMobile : true)).map(l => (
             <div
               key={l.label}
               className={`dib f6 f4-ns mr2 mr3-ns pointer dim ${l.className}`}
@@ -71,4 +74,4 @@ const Nav = () => (
   </div>
 )
 
-export default Nav
+export default injectIsMobile(Nav)

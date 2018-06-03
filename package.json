@@ -14,7 +14,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "build:deploy:dev": "npm run format; npm run build; npm run deploy:dev",
     "deploy:dev": "cd public; ./../node_modules/.bin/surge; cd ../",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -4,7 +4,7 @@ import SubHeader from 'components/subHeader'
 import Button from 'components/ui/button'
 import campaignsIllustration from 'assets/images/illustrations/campaigns.svg'
 import liveChatIllustration from 'assets/images/illustrations/live-chat.svg'
-import isMobile from 'utils/isMobile'
+import injectIsMobile from 'components/injectIsMobile'
 
 const UseCase = ({
   illustration,
@@ -12,6 +12,7 @@ const UseCase = ({
   body,
   href,
   illustrationTowardsRight,
+  isMobile
 }) => (
   <div className="fl-ns w-100 w-50-ns mb4 mb0-ns">
     <div className={`w-100 ${illustrationTowardsRight ? 'tr' : ''}`}>
@@ -31,17 +32,19 @@ const UseCase = ({
   </div>
 )
 
-const UseCases = ({}) => (
+const UseCases = ({isMobile}) => (
   <div>
     <SubHeader title="Use cases" />
     <div className="cf">
       <UseCase
+        isMobile={isMobile}
         title="Mindfull outbound campaigns"
         illustration={campaignsIllustration}
         body="Mindless automation turns feels spammy, irritating and robotic. Use Speer to run intenful (delightful) campaigns that don’t annoy."
         href="http://google.com"
       />
       <UseCase
+        isMobile={isMobile}
         title="Find your most loved live-chat leads"
         illustration={liveChatIllustration}
         illustrationTowardsRight={true}
@@ -59,4 +62,4 @@ const UseCases = ({}) => (
   </div>
 )
 
-export default UseCases
+export default injectIsMobile(UseCases)
