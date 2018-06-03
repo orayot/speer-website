@@ -56,6 +56,7 @@ body {
 .bg-lightest-gray {background-color: #F4F4F4}
 
 /* border-color helpers */
+.b--light-blue {border-color: #2A99D2}
 .b--black {border-color:#494949}
 .b--gray {border-color:#929292}
 .b--lighter-gray {border-color:#979797}

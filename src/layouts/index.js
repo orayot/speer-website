@@ -10,15 +10,15 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        {name: 'description', content: 'Sample'},
-        {name: 'keywords', content: 'sample, something'},
+        { name: 'description', content: 'Sample' },
+        { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div className='black'>
-      <Nav/>
-      <div className='bg-white'>
-        {children()}
+    <div className="black">
+      <div className="fixed w-100">
+        <Nav />
       </div>
+      <div className="bg-white pt6">{children()}</div>
       <Footer />
     </div>
   </div>

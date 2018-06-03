@@ -1,26 +1,34 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const links = [{
-  label: 'Blog'
-}, {
-  label: 'Terms'
-}, {
-  label: 'Privacy Policy'
-}]
+const links = [
+  {
+    label: 'Blog',
+  },
+  {
+    label: 'Terms',
+  },
+  {
+    label: 'Privacy Policy',
+  },
+]
 
-const Footer = () => (<div className='cf bg-lightest-gray pv4'>
-  <div className='fl-ns w-40 pointer pl3 pl4-ns'>
-    <span className='b mr4'>Speer by Palisade</span> founders@speer.app
+const Footer = () => (
+  <div className="cf bg-lightest-gray pv4">
+    <div className="w-100 fl-ns w-40-ns pointer pl3 pl4-ns">
+      <span className="b mr4">Speer by Palisade</span> <span className='dn dib-ns'>founders@speer.app</span>
+    </div>
+    <div className="w-100 fl-ns w-60-ns tl tr-ns pl3 pl0-ns pr0 pr4-ns mt2 mt0-ns f6 f5-ns">
+      {links.map(l => (
+        <div key={l.label} className="dib mr2 mr4-ns pointer dim">
+          <Link to={l.href}>
+            {l.icon && <img src={l.icon} className="dib h1 mr2" />}
+            {l.label}
+          </Link>
+        </div>
+      ))}
+    </div>
   </div>
-  <div className='fl-ns w-60 tr pr3 pr4-ns'>
-    {links.map(l => (<div key={l.label} className='dib ml4 pointer dim'>
-      <Link to={l.href}>
-        {l.icon && <img src={l.icon} className='dib h1 mr2'/>}
-        {l.label}
-      </Link>
-    </div>))}
-  </div>
-</div>)
+)
 
 export default Footer
