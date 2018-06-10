@@ -15,7 +15,9 @@ const Button = ({ label, href, backgroundColor, size }) => (
   <div>
     <Link to={href}>
       <div
-        className={`br-pill b dib bw2 ${sizeVariations[size ? size : 'small']}`}
+        className={`br-pill b dib bw2 grow ${
+          sizeVariations[size ? size : 'small']
+        }`}
         style={bgVariations[backgroundColor]}
       >
         {label}

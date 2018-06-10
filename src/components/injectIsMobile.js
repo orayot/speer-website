@@ -1,26 +1,36 @@
-import React from 'react';
+import React from 'react'
 
-const injectIsMobile = (Child) => class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {isMobile: false}
+const injectIsMobile = Child =>
+  class extends React.Component {
+    constructor(props) {
+      super(props)
+      this.state = { isMobile: false }
 
-    this.onResize = this.onResize.bind(this)
-  }
+      this.onResize = this.onResize.bind(this)
+    }
 
-  componentWillMount() {
-    const resizeListener = typeof window !== 'undefined' && window.addEventListener('resize', this.onResize)
-    this.onResize()
-  }
+    componentWillMount() {
+      const resizeListener =
+        typeof window !== 'undefined' &&
+        window.addEventListener('resize', this.onResize)
+      this.onResize()
+    }
 
-  onResize() {
-    const isMobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 570px)').matches
-    this.setState({isMobile})
+    componentWillUnmount() {
+      typeof window !== 'undefined' &&
+        window.removeEventListener('resize', this.onResize)
+    }
+
+    onResize() {
+      const isMobile =
+        typeof window !== 'undefined' &&
+        window.matchMedia('(max-width: 768px)').matches
+      this.setState({ isMobile })
+    }
+
+    render() {
+      return <Child isMobile={this.state.isMobile} {...this.props} />
+    }
   }
-  
-  render() {
-    return <Child isMobile={this.state.isMobile} {...this.props} />
-  }
-}
 
 export default injectIsMobile

@@ -4,7 +4,7 @@ import Button from 'components/ui/button'
 import rocketOnBack from 'assets/images/illustrations/rocket-on-back.svg'
 import injectIsMobile from 'components/injectIsMobile'
 
-const ReadyToTry = ({isMobile}) => (
+const ReadyToTry = ({ isMobile }) => (
   <div className="tc pv6" style={{}}>
     <div className="pv4">
       <div className="lighter-gray f4 mb3">Ready to try Speer ?</div>

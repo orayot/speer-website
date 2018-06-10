@@ -12,7 +12,7 @@ const UseCase = ({
   body,
   href,
   illustrationTowardsRight,
-  isMobile
+  isMobile,
 }) => (
   <div className="fl-ns w-100 w-50-ns mb4 mb0-ns">
     <div className={`w-100 ${illustrationTowardsRight ? 'tr' : ''}`}>
@@ -32,7 +32,7 @@ const UseCase = ({
   </div>
 )
 
-const UseCases = ({isMobile}) => (
+const UseCases = ({ isMobile }) => (
   <div>
     <SubHeader title="Use cases" />
     <div className="cf">
@@ -41,7 +41,7 @@ const UseCases = ({isMobile}) => (
         title="Mindfull outbound campaigns"
         illustration={campaignsIllustration}
         body="Mindless automation turns feels spammy, irritating and robotic. Use Speer to run intenful (delightful) campaigns that don’t annoy."
-        href="http://google.com"
+        href="/posts/2018/mindfull-outbound-campaigns"
       />
       <UseCase
         isMobile={isMobile}

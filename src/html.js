@@ -25,8 +25,8 @@ module.exports = class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <link rel="stylesheet" type="text/css" href="tachyons.min.css" />
-          <link rel="stylesheet" type="text/css" href="main.css" />
+          <link rel="stylesheet" type="text/css" href="/tachyons.min.css" />
+          <link rel="stylesheet" type="text/css" href="/main.css" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -34,7 +34,7 @@ module.exports = class HTML extends React.Component {
           {this.props.headComponents}
           {css}
         </head>
-        <body className="gradient-background" {...this.props.bodyAttributes}>
+        <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <div
             key={`body`}

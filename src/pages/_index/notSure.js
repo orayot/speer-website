@@ -20,7 +20,7 @@ const CaseStudy = ({ title, body, isMobile }) => (
   </div>
 )
 
-const NotSure = ({isMobile}) => (
+const NotSure = ({ isMobile }) => (
   <div className="mv5">
     <div className="w-100 w-80-ns center-ns">
       <div className="cf">

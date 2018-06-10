@@ -8,7 +8,7 @@ import injectIsMobile from 'components/injectIsMobile'
 const links = [
   {
     label: 'Pricing',
-    href: '',
+    href: '/pricing',
     showOnMobile: true,
   },
   {
@@ -35,7 +35,7 @@ const links = [
   },
 ]
 
-const Nav = ({isMobile}) => (
+const Nav = ({ isMobile }) => (
   <div className="">
     <div
       className="gradient-background white"
@@ -43,7 +43,7 @@ const Nav = ({isMobile}) => (
     >
       <div className="cf">
         <div className="w-100 w-40-ns tc tl-ns fl-ns white pointer pl0 pl4-ns b mt2 mt3-ns f4">
-          Speer
+          <Link to="/">Speer</Link>
         </div>
         <div className="w-100 w-60-ns fl-ns tc tr-ns pr3 pr4-ns mt2 mt3-ns pl3 pl0-ns">
           {links.filter(l => (isMobile ? l.showOnMobile : true)).map(l => (

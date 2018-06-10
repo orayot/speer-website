@@ -5,7 +5,7 @@ import UseCases from 'pages/_index/useCases'
 import Testimonies from 'pages/_index/testimonies'
 import NotSure from 'pages/_index/notSure'
 import HowItWorks from 'pages/_index/howItWorks'
-import ReadyToTry from 'pages/_index/readyToTry'
+import ReadyToTry from 'components/readyToTry'
 
 const IndexPage = () => (
   <div>

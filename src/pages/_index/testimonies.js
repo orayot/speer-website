@@ -3,7 +3,15 @@ import React from 'react'
 import SubHeader from 'components/subHeader'
 import injectIsMobile from 'components/injectIsMobile'
 
-const Testimony = ({ title, body, name, designation, avatar, marginTop, isMobile }) => (
+const Testimony = ({
+  title,
+  body,
+  name,
+  designation,
+  avatar,
+  marginTop,
+  isMobile,
+}) => (
   <div
     className="w-100 fl-ns w-25-ns pa4"
     style={isMobile ? {} : { marginTop }}
@@ -66,11 +74,13 @@ const testimonies = [
   },
 ]
 
-const Testimonies = ({isMobile}) => (
+const Testimonies = ({ isMobile }) => (
   <div className="mt4 mt0-ns">
     <SubHeader title="Testimonies" />
     <div className="cf pv4">
-      {testimonies.map((t, i) => <Testimony key={i} isMobile={isMobile} {...t}/>)}
+      {testimonies.map((t, i) => (
+        <Testimony key={i} isMobile={isMobile} {...t} />
+      ))}
     </div>
   </div>
 )

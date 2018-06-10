@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Button from 'components/ui/button'
-import threadIllustration from 'assets/images/illustrations/thread.svg'
+import threadIllustration from 'assets/images/illustrations/thread.png'
 
 const Hero = () => (
   <div className="cf">

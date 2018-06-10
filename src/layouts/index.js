@@ -5,24 +5,26 @@ import Helmet from 'react-helmet'
 import Nav from 'components/nav'
 import Footer from 'components/footer'
 
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <div className="black">
-      <div className="fixed w-100">
-        <Nav />
+const Layout = ({ children, data }) => {
+  return (
+    <div>
+      <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'sample, something' },
+        ]}
+      />
+      <div className="black">
+        <div className="fixed w-100 z-1">
+          <Nav />
+        </div>
+        <div className="bg-white pt6 min-vh-100">{children()}</div>
+        <Footer />
       </div>
-      <div className="bg-white pt6">{children()}</div>
-      <Footer />
     </div>
-  </div>
-)
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
