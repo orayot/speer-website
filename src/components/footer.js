@@ -4,15 +4,15 @@ import Link from 'gatsby-link'
 const links = [
   {
     label: 'Blog',
-    href: 'http://google.com',
+    href: '/blog',
   },
   {
     label: 'Terms',
-    href: 'http://google.com',
+    href: '/posts/legal/tos',
   },
   {
     label: 'Privacy Policy',
-    href: 'http://google.com',
+    href: '/posts/legal/privacy',
   },
 ]
 
