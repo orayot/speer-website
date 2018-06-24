@@ -6,8 +6,8 @@ const Post = ({ data: { markdownRemark: post } }) => {
     <div className="min-vh-100 w-90 w-50-ns center">
       <div className="cf">
         <div className="fl w-50 f6 black-60">
-          {post.frontmatter.tags.map((t, i) => (
-            <div className="dib mr2">#{t}</div>
+          {post.frontmatter.tags && post.frontmatter.tags.map((t, i) => (
+            <div className="dib mr2" key={i}>#{t}</div>
           ))}
         </div>
 

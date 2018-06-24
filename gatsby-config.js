@@ -2,6 +2,9 @@ module.exports = {
   siteMetadata: {
     title: 'Speer : Make sales relevant, not loud',
   },
+  mapping: {
+    "MarkdownRemark.frontmatter.author": `AuthorYaml`,
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',

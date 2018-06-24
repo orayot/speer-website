@@ -13,10 +13,11 @@
     "react-helmet": "^5.2.0"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm run format; gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "deploy:dev": "npm run format; cd public; ./../node_modules/.bin/surge; cd ../",
+    "deploy:dev": "cd public; ./../node_modules/.bin/surge; cd ../",
+    "deploy:prod": "aws s3 sync public/ s3://speer.app --region=ap-south-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

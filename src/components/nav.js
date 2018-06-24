@@ -13,7 +13,7 @@ const links = [
   },
   {
     label: 'Blog',
-    href: '',
+    href: '/blog',
     showOnMobile: true,
   },
   {
@@ -42,7 +42,7 @@ const Nav = ({ isMobile }) => (
       style={{ height: isMobile ? 80 : 68 }}
     >
       <div className="cf">
-        <div className="w-100 w-40-ns tc tl-ns fl-ns white pointer pl0 pl4-ns b mt2 mt3-ns f4">
+        <div className="w-100 w-40-ns tc tl-ns fl-ns white pointer pl0 pl4-ns b mt2 mt3-ns f6 f3-ns">
           <Link to="/">Speer</Link>
         </div>
         <div className="w-100 w-60-ns fl-ns tc tr-ns pr3 pr4-ns mt2 mt3-ns pl3 pl0-ns">

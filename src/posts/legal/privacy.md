@@ -1,8 +1,9 @@
 ---
+author: Shivek Khurana
 path: "/posts/legal/privacy"
 date: "2018-06-12T17:12:33.962Z"
 title: "Privacy Policy"
-tags: ["privacy"]
+isFixedPage: true
 ---
 
 Your privacy is important to us. It is Palisade Technologies Pvt. Ltd.'s policy to respect your privacy regarding any information we may collect from you across our website, http://speer.app, and other sites we own and operate.

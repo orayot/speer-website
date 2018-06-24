@@ -1,8 +1,9 @@
 ---
+author: Shivek Khurana
 path: "/posts/legal/tos"
 date: "2018-06-12T17:12:33.962Z"
 title: "Terms of service"
-tags: ["terms"]
+isFixedPage: true
 ---
 
 **Introduction**
