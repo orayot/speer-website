@@ -14,7 +14,7 @@ const Testimony = ({
 }) => (
   <div
     className="w-100 fl-ns pa4 w-25-ns"
-    style={{marginTop: isMobile ? 0 : marginTop}}
+    style={{ marginTop: isMobile ? 0 : marginTop }}
   >
     <div className="pa3 ba b--lightest-gray br2">
       <div className="">{body}</div>
@@ -53,20 +53,20 @@ const testimonies = [
     marginTop: 40,
   },
   {
-    body:
-      `A major part of my job is to reach out and sell on email and I've used everything I can get my hands on. I liked the authenticity of their message. It's true that most customers hate outreach emails. This app helps me reach out only to those who intend to buy.`,
+    body: `A major part of my job is to reach out and sell on email and I've used everything I can get my hands on. I liked the authenticity of their message. It's true that most customers hate outreach emails. This app helps me reach out only to those who intend to buy.`,
     avatar: 'http://i.pravatar.cc/400?img=12',
     name: 'Gareth Bael',
     designation: 'CEO, Meta Labs',
     marginTop: 24,
   },
   {
-    body: 'Speer saved a lot of time for us and helped us priorties our outreach thereby have given us a great ROI. Lead nuturing can never be so easy for us, thanks to team behind Speer.',
+    body:
+      'Speer saved a lot of time for us and helped us priorties our outreach thereby have given us a great ROI. Lead nuturing can never be so easy for us, thanks to team behind Speer.',
     avatar: 'http://i.pravatar.cc/400?img=5',
     name: 'Gareth Bael',
     designation: 'CEO, Meta Labs',
     marginTop: -50,
-  }
+  },
 ]
 
 const Testimonies = ({ isMobile }) => (

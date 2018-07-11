@@ -9,7 +9,7 @@ const Hero = () => (
       Stories from your buying assistants.
     </div>
     <div className="center tc">
-      <img src={heroIllustration} className="h5 mt4"/>
+      <img src={heroIllustration} className="h5 mt4" />
     </div>
   </div>
 )
