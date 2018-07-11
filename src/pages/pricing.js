@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Column from 'pages/_pricing/column'
+import Column from 'components/pages/pricing/column'
 import seed from 'assets/images/illustrations/seed.svg'
 import startup from 'assets/images/illustrations/startup.svg'
 import growth from 'assets/images/illustrations/growth.svg'

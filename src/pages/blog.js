@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Hero from 'pages/_blog/hero'
-import PostLink from 'pages/_blog/postLink'
+import Hero from 'components/pages/blog/hero'
+import PostLink from 'components/pages/blog/postLink'
 
 const Blog = ({
   data: {
@@ -14,8 +14,7 @@ const Blog = ({
       <div className="w-90 w-50-ns center mt4 pt4 bt b--black-10">
         {edges
           .filter(edge => !edge.node.frontmatter.isFixedPage)
-          .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-        }}
+          .map(edge => <PostLink key={edge.node.id} post={edge.node} />)}
       </div>
     </div>
   )

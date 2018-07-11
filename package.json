@@ -17,7 +17,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "deploy:dev": "cd public; ./../node_modules/.bin/surge; cd ../",
-    "deploy:prod": "aws s3 sync public/ s3://speer.app --region=ap-south-1",
+    "deploy:s3": "aws s3 sync public/ s3://speer.app --region=ap-south-1",
+    "deploy:prod": "rsync -avzhe ssh --progress ./public/* root@94.237.66.178:/root/speer.app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
