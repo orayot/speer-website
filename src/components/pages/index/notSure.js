@@ -27,7 +27,7 @@ const NotSure = ({ isMobile }) => (
         <div className="fl w-20">
           <img src={manThinking} className="h-100" />
         </div>
-        <div className="fl w-60 ph3 ph0-ns">
+        <div className="fl w-60 ph3 ph0-ns mt5">
           <div className="tc">
             <div className="black-40 f3 f2-ns mb4">
               Not sure if Speer is for you ?
@@ -42,7 +42,7 @@ const NotSure = ({ isMobile }) => (
             </div>
           </div>
 
-          <div className="mt3 mt5-ns tc">
+          {/*<div className="mt3 mt5-ns tc">
             <CaseStudy
               title={'Case Study'}
               isMobile={isMobile}
@@ -53,7 +53,7 @@ const NotSure = ({ isMobile }) => (
               isMobile={isMobile}
               body={'How a company used Speer and did x'}
             />
-          </div>
+          </div>*/}
         </div>
         <div className="fl w-20">
           <img src={manExplaining} className="h-100" />

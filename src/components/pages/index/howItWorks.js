@@ -4,8 +4,10 @@ import activity from 'assets/icons/activity.svg'
 import compose from 'assets/icons/edit-3.svg'
 import link from 'assets/icons/link.svg'
 import message from 'assets/icons/message-square.svg'
-import screenshot from 'assets/screenshots/106.png'
+import screenshot004 from 'assets/screenshots/004.png'
+import screenshot106 from 'assets/screenshots/106.png'
 import screenshot104 from 'assets/screenshots/104.png'
+import screenshot107 from 'assets/screenshots/107.png'
 import SubHeader from 'components/subHeader'
 import injectIsMobile from 'components/injectIsMobile'
 
@@ -15,7 +17,7 @@ const steps = [
     body:
       'Connect you email account to Speer, all messages are sent from your personal email.',
     icon: link,
-    screenshot: screenshot,
+    screenshot: screenshot004,
   },
   {
     label: 'Create',
@@ -27,23 +29,22 @@ const steps = [
     label: 'Send',
     body: 'Send at scale or individually.',
     icon: message,
-    screenshot: screenshot,
+    screenshot: screenshot106,
   },
   {
     label: 'Analyse',
     body: 'Analyse your outreach. Find the most interested leads.',
     icon: activity,
-    screenshot: screenshot,
+    screenshot: screenshot107,
   },
 ]
 
 const Tabs = ({ steps, activeTab, onClick, isMobile }) => {
-  const activeStep = steps.find(s => s.label === activeTab)
   return (
     <div>
       <div className="cf w-80 w-60-ns center">
         {steps.map((s, i) => (
-          <div key={i} className="fl w-25 tc gray">
+          <div key={i} className="fl w-25 tc gray cf">
             <div
               className={`dib br-100 ba dim pointer ${
                 activeTab === s.label ? 'b--light-blue' : 'b--lightest-gray'
@@ -58,12 +59,16 @@ const Tabs = ({ steps, activeTab, onClick, isMobile }) => {
           </div>
         ))}
       </div>
-      <div className="tc">
-        <div className="gray f4 mt4">{activeStep.body}</div>
-        <img
-          src={activeStep.screenshot}
-          className="w-50 ba b--black-20 shadow-2 br3 mt3"
-        />
+      <div className="mt4">
+        {steps.map((s, i) => (
+          <div className={`tc ${activeTab === s.label ? '' : 'dn'}`} key={i}>
+            <div className="gray f4">{s.body}</div>
+            <img
+              src={s.screenshot}
+              className="w-50 ba b--black-20 shadow-2 br3 mt3"
+            />
+          </div>
+        ))}
       </div>
     </div>
   )

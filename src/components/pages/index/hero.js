@@ -24,7 +24,7 @@ const Hero = () => (
         </div>
       </div>
     </div>
-    <div className="w-100 w-50-ns fl-ns">
+    <div className="w-100 w-50-ns fl-ns tr">
       <img src={threadIllustration} />
     </div>
   </div>

@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "npm run format; gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "deploy:dev": "cd public; ./../node_modules/.bin/surge; cd ../",
     "deploy:s3": "aws s3 sync public/ s3://speer.app --region=ap-south-1",

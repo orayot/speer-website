@@ -1,7 +1,8 @@
 const path = require('path')
 
 exports.createPages = ({boundActionCreators: {createPage}, graphql}) => {
-  const Post = path.resolve('src/components/post.js')
+  const Post = path.resolve('src/components/post.js') //render a post
+
   return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }

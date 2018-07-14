@@ -14,7 +14,11 @@ const Layout = ({ children, data }) => {
           { name: 'description', content: 'Sample' },
           { name: 'keywords', content: 'sample, something' },
         ]}
-      />
+      >
+        {process.env.NODE_ENV === `production` && (
+          <script type="text/javascript" src="/chaport.js" />
+        )}
+      </Helmet>
       <div className="black">
         <div className="fixed w-100 z-1">
           <Nav />
