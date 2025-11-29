@@ -1,0 +1,2 @@
+webpackJsonp([0x9061734fd2db],{342:function(t,a){t.exports={data:{markdownRemark:{html:"<p>We started working on Speer almost 2 years ago. It wasn't what it is today.\nSpeer (formerly known as Proposl) is a sales accelration software, that helps you reach out to your customers, without annoying them. </p>",frontmatter:{tags:["product"],path:"/posts/2018/a-new-beginning",title:"A new beginning",date:"July 12, 2017"}}},pathContext:{}}}});
+//# sourceMappingURL=path---posts-2018-a-new-beginning-cd9a3c1127056d66f19c.js.map

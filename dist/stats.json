@@ -1,0 +1,64 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-5016d7ce3dab67305a90.js",
+      "component---src-pages-index-js-5016d7ce3dab67305a90.js.map"
+    ],
+    "path---blog": [
+      "path---blog-578cd8d486ff9f8290a0.js",
+      "path---blog-578cd8d486ff9f8290a0.js.map"
+    ],
+    "path---": [
+      "path----47ae83fe5b241030e4ae.js",
+      "path----47ae83fe5b241030e4ae.js.map"
+    ],
+    "path---posts-features-mindfull-outbound-campaigns": [
+      "path---posts-features-mindfull-outbound-campaigns-d61d16c4df0ff8308ec9.js",
+      "path---posts-features-mindfull-outbound-campaigns-d61d16c4df0ff8308ec9.js.map"
+    ],
+    "path---pricing": [
+      "path---pricing-a0e39f21c11f6a62c5ab.js",
+      "path---pricing-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---posts-legal-tos": [
+      "path---posts-legal-tos-23cb5855f07748e9acfd.js",
+      "path---posts-legal-tos-23cb5855f07748e9acfd.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-ea981b02b39c8b82ae4d.js",
+      "component---src-layouts-index-js-ea981b02b39c8b82ae4d.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---posts-2018-a-new-beginning": [
+      "path---posts-2018-a-new-beginning-108d90eeb8679b4b090c.js",
+      "path---posts-2018-a-new-beginning-108d90eeb8679b4b090c.js.map"
+    ],
+    "commons": [
+      "commons-8bfbcae085fbdcbff4ac.js",
+      "commons-8bfbcae085fbdcbff4ac.js.map"
+    ],
+    "component---src-components-post-js": [
+      "component---src-components-post-js-b0dc0dbada62a2002c3b.js",
+      "component---src-components-post-js-b0dc0dbada62a2002c3b.js.map"
+    ],
+    "component---src-pages-blog-js": [
+      "component---src-pages-blog-js-efcab4efdf6eecc7824b.js",
+      "component---src-pages-blog-js-efcab4efdf6eecc7824b.js.map"
+    ],
+    "component---src-pages-pricing-js": [
+      "component---src-pages-pricing-js-1b9eff1e6a1193b8ad25.js",
+      "component---src-pages-pricing-js-1b9eff1e6a1193b8ad25.js.map"
+    ],
+    "app": [
+      "app-9c330e84660f174a1566.js",
+      "app-9c330e84660f174a1566.js.map"
+    ],
+    "path---posts-legal-privacy": [
+      "path---posts-legal-privacy-13a98c43d62e2cfcc844.js",
+      "path---posts-legal-privacy-13a98c43d62e2cfcc844.js.map"
+    ]
+  }
+}
