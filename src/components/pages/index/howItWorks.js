@@ -65,7 +65,7 @@ const Tabs = ({ steps, activeTab, onClick, isMobile }) => {
             <div className="gray f4">{s.body}</div>
             <img
               src={s.screenshot}
-              className="w-50 ba b--black-20 shadow-2 br3 mt3"
+              className="w-90 w-60-ns center ba b--black-20 shadow-2 br3 mt3"
             />
           </div>
         ))}
